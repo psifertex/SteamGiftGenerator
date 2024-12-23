@@ -99,12 +99,12 @@ def generate_gift_card_page(c, gift_code, details, x_offset, y_offset, width, he
         aspect_ratio = image_height / image_width
         img_width = width - 2 * margin
         img_height = img_width * aspect_ratio
-        if img_height > height - margin - 105 - (len(description_lines) * 10):
-            img_height = height - margin - 105 - (len(description_lines) * 10)
+        if img_height > height - margin - 125 - (len(description_lines) * 10):
+            img_height = height - margin - 125 - (len(description_lines) * 10)
             img_width = img_height / aspect_ratio
 
         img_x = x_offset + (width - img_width) / 2
-        img_y = y_offset + (height - img_height - margin - 105 - (len(description_lines) * 10))
+        img_y = y_offset + margin
         c.drawImage(temp_image_path, img_x, img_y, img_width, img_height)
         os.remove(temp_image_path)
 
