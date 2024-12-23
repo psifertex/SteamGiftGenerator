@@ -21,6 +21,10 @@ This project generates Steam gift cards as PDFs using game details fetched from 
     pip install -r requirements.txt
     ```
 
+## Preview
+
+![Preview](preview.png)
+
 ## Usage
 
 1. Prepare a CSV file with the following columns:
